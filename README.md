@@ -1,5 +1,6 @@
 # Nodeconf Brazil 2016
-<img src="https://github.com/nodeconf/brazil/blob/master/img/nodeConfBr-logo.png?raw=true" alt="Nodeconf Brazil 2016 Logo">
+
+![Nodeconf Brazil 2016 Logo](http://brazil.nodeconf.com/img/nodeConfBr-logo.png)
 
 NodeConf Brazil 2016 is a two day event in São Paulo.
 
