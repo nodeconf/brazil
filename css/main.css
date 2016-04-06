@@ -441,6 +441,34 @@ body{
     padding: 0;
     border: none;
     clear: both;
+    position: relative;
+}
+
+.MuralSpeaker__Speaker .SpeakerPhot__description{
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  padding: 0 10px;
+  line-height: 1.8em;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0;
+  transform: scale(1.1);
+  transition: opacity .25s ease, transform .25s ease;
+  will-change: transform;
+}
+
+.MuralSpeaker__Speaker:hover .SpeakerPhot__description {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .MuralSpeaker__Speaker .SpeakerPhot .SpeakerPhot__image{
