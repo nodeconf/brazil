@@ -498,8 +498,8 @@ body{
 .MuralSpeaker__Speaker .MuralSpeaker__Speaker-Name{
     margin: 0;
     height: 50px;
-    // width: 100%;
-    // float: left;
+    width: 100%;
+    float: left;
     display: block;
     overflow: hidden;
     position: relative;
@@ -528,20 +528,31 @@ body{
     text-align: center;
 }
 
+@media (min-width: 550px) {
+  .MuralSpeaker__Speaker .Speaker-Name,
+  .MuralSpeaker__Speaker .Speaker-Subject {
+    display: none !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .MuralSpeaker__Speaker .MuralSpeaker__Speaker-Name,
+  .MuralSpeaker__Speaker .MuralSpeaker__Speaker-Subject {
+    display: none !important;
+  }
+}
+
+.MuralSpeaker__Speaker .Speaker-Name,
+.MuralSpeaker__Speaker .Speaker-Subject {
+  display: inline-block;
+  color: white;
+  font-size: 2em;
+  margin: 20px 5px 0 0;
+}
+
 @media screen and (max-device-width: 768px) {
   .MuralSpeaker__Speaker {
     padding-bottom: 20px;
-  }
-
-  .MuralSpeaker__Speaker .SpeakerPhot .MuralSpeaker__Speaker-Name,
-  .MuralSpeaker__Speaker .SpeakerPhot .MuralSpeaker__Speaker-Name span,
-  .MuralSpeaker__Speaker .SpeakerPhot .MuralSpeaker__Speaker-Subject {
-    display: inline;
-  }
-
-  .MuralSpeaker__Speaker .SpeakerPhot .MuralSpeaker__Speaker-Name {
-    width: none;
-    white-space: nowrap;
   }
 
   .MuralSpeaker__Speaker > .MuralSpeaker__Speaker-Name,
