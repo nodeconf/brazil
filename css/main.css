@@ -1274,3 +1274,12 @@ body{
     }
 
 }
+
+.fa-custom{
+    font-size:2.2em;
+    color: white;
+}
+
+i:hover { 
+    color: #75bd46 
+}
