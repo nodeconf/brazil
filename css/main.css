@@ -218,7 +218,7 @@ body{
 
 .ButtonEvent a{
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.35em;
     height: 50px;
     line-height: 46px;
     padding: 0 40px;
@@ -227,6 +227,10 @@ body{
     margin: 0 10px;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .ButtonEvent a{font-size: 1.5em;}
 }
 
 .ButtonEvent .btnColor{
@@ -444,44 +448,58 @@ body{
     position: relative;
 }
 
-.MuralSpeaker__Speaker .SpeakerPhot__description{
-  color: white;
-  font-size: 2em;
-  position: absolute;
-  top: 0;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  padding: 0 10px;
-  line-height: 1.8em;
-  text-align: center;
-  background-color: rgba(0,0,0,0.5);
-  opacity: 0;
-  transform: scale(1.1);
-  transition: opacity .25s ease, transform .25s ease;
-  will-change: transform;
+.MuralSpeaker__Speaker .SpeakerHover {
+  overflow: hidden;
 }
 
-.MuralSpeaker__Speaker:hover .SpeakerPhot__description {
-  opacity: 1;
-  transform: scale(1);
+.MuralSpeaker__Speaker .SpeakerPhot__description{
+    color: white;
+}
+
+.MuralSpeaker__Speaker .SpeakerPhot__description{
+    text-align: justify;
+    font-size: 2em;
+}
+
+@media screen and (min-width: 410px) {
+  .MuralSpeaker__Speaker .SpeakerPhot__description{
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    padding: 0 10px;
+    line-height: 1.8em;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    transform: scale(1.1);
+    transition: opacity .25s ease, transform .25s ease;
+    will-change: transform;
+  }
+
+  .MuralSpeaker__Speaker .SpeakerHover:hover .SpeakerPhot__description {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .MuralSpeaker__Speaker .SpeakerPhot .SpeakerPhot__image{
     width: 100%;
-    float: left;
+    // float: left;
     display: block;
 }
 
 .MuralSpeaker__Speaker .MuralSpeaker__Speaker-Name{
     margin: 0;
     height: 50px;
-    width: 100%;
-    float: left;
+    // width: 100%;
+    // float: left;
     display: block;
     overflow: hidden;
     position: relative;
@@ -508,6 +526,28 @@ body{
     overflow: hidden;
     font-size: 1.35em;
     text-align: center;
+}
+
+@media screen and (max-device-width: 768px) {
+  .MuralSpeaker__Speaker {
+    padding-bottom: 20px;
+  }
+
+  .MuralSpeaker__Speaker .SpeakerPhot .MuralSpeaker__Speaker-Name,
+  .MuralSpeaker__Speaker .SpeakerPhot .MuralSpeaker__Speaker-Name span,
+  .MuralSpeaker__Speaker .SpeakerPhot .MuralSpeaker__Speaker-Subject {
+    display: inline;
+  }
+
+  .MuralSpeaker__Speaker .SpeakerPhot .MuralSpeaker__Speaker-Name {
+    width: none;
+    white-space: nowrap;
+  }
+
+  .MuralSpeaker__Speaker > .MuralSpeaker__Speaker-Name,
+  .MuralSpeaker__Speaker > .MuralSpeaker__Speaker-Subject {
+    display: none;
+  }
 }
 
 .section.palestrantes .ButtonEvent{
@@ -979,7 +1019,7 @@ body{
     }
 
     .MuralSpeaker__Speaker{
-        width: calc(50% - 25px);
+        width: 100%;
         margin: 35px 50px 0 0;
     }
 
