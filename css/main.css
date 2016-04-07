@@ -45,6 +45,9 @@
     content: "\f167";
 }
 
+.fa-github:before {
+    content: "\f09b";
+}
 
 object{
     display: none;
@@ -729,7 +732,7 @@ body{
     color: #345a96;
 }
 
-.footer-site .copyright{
+.footer-site .copyright {
     float: left;
     line-height: 35px;
     height: 35px;
@@ -741,6 +744,25 @@ body{
     color: #fff;
     letter-spacing: 1px;
     font-size: 1.5em;
+}
+
+.footer-site .coc {
+    float: left;
+    line-height: 35px;
+    height: 35px;
+    display: block;
+    overflow: hidden;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 0 0 25px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+
+.footer-site .coc a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .LeftFooter{
@@ -1224,6 +1246,20 @@ body{
         font-size: 1.5em;
     }
 
+    .footer-site .coc{
+        float: left;
+        line-height: 1em;
+        height: auto;
+        display: block;
+        overflow: hidden;
+        text-transform: uppercase;
+        margin: 20px 0 0;
+        padding: 0;
+        color: #fff;
+        letter-spacing: 1px;
+        font-size: 1.5em;
+    }
+
     .ListPatrocinadores .ListPatrocinadores__List li {
         width: calc(50% - 10px);
         margin: 25px 20px 0 0;
@@ -1238,62 +1274,3 @@ body{
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*****************************************************************************/
