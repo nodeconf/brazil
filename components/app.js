@@ -57,6 +57,6 @@ let vm = new Vue({ // eslint-disable-line no-new
 })
 
 vm.$lang.$watch('lang', (lang) => {
-
+  vm.speakers = locales[this.lang()].speakers
 })
 
