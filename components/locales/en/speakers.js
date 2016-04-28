@@ -11,7 +11,7 @@ export default [
       twitter: 'https://twitter.com/ivan_seidel'
     },
     description: `
-        Ivan is a student at te Federal University of ABC, has two companies in areas of
+        Ivan is a student at te Federal University of ABC, has two companies in the areas of
         Education and Advertising. Attends robotics competitions in Brazil and abroad, has experience
         in Hardware and Software.`
   },
@@ -25,12 +25,12 @@ export default [
       twitter: 'https://twitter.com/adambretz'
     },
     description: `
-      Adam develops JS for almost a decade, active in the community Open Source
+      Adam develops JS for almost a decade, active in the Open Source community
       mostly in tools of Hapi ecosystem. He is co-author of "Full Stack JS Development with MEAN".
       Fanatic by Mega Man. JS too!`
   },
   {
-    name: 'Christopher EnyTc',
+    name: 'Christopher Silva',
     slug: 'christopher-enytc',
     job: 'DEVELOPER EVANGELIST | PAGAR.ME',
     image: '/assets/img/3.png',

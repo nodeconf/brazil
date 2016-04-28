@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "browser-locale": "^1.0.0",
+    "lodash": "^4.11.1",
     "vue": "^1.0.21",
     "vue-i18n": "^3.0.0"
   }

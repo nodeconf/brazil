@@ -13,7 +13,7 @@ export default {
   schedule: 'Schedule',
   speakers: 'Speakers',
   about: 'About',
-  about_the_event: 'About the evente',
+  about_the_event: 'About the event',
   close: 'Close',
   where_title: 'Will be at Teatro Frei Caneca',
   open_map: 'OPEN ON GOOGLE MAPS',
@@ -24,25 +24,30 @@ export default {
   all, close to Avenida Paulista and Rua da Consolação, postcars of the Paulista capital. The location
   is well broad. We will have in the auditorium lectures and lounge other interesting activities such
   as workshops, and demo days of Brazilian startups.  `,
-  want_to_know_more_about: 'I wnat to recive information on the NodeConfBR 2016',
+  want_to_know_more_about: 'I want to receive information on the NodeConfBR 2016',
   doubts_contact: 'Doubts: nodebr@nodebr.org',
-  footnote: `Organizers, sponsors and participants are obliged to follow the Code of Conduct.`,
+  new_speakers: 'Keep watching, we\'ll announce new speakers shortly!',
+  be_a_sponsor: 'Be a NodeConf sponsor',
+  want_to_be_sponsor: 'I want to be an sponsor',
+  footnote: 'Organizers, sponsors and participants are obliged to follow the Code of Conduct.',
+  bronze_sponsorships: 'Bronze Sponsorships',
+  silver_sponsorships: 'Silver Sponsorships',
   event_description: `
     <p>
       This is the first edition of NodeConf in Latin America and is also the first major event focused
-      exclusively on Node.js of Brazil. We have an amazing experience in Sao Paulo on 2 days filled
+      exclusively on Node.js of Brazil. We'll have an amazing experience in São Paulo on 2 days filled
       with large lectures and some surprises waiting for you.
     </p>
     <p>
       In this first edition, we will be bringing news about how is the current scenario of Node.js.
       We will create an environment of contact between companies and developers, a space for disseminating the
-      knowledge and projects uncool made by Community and also have special guests who are influence on Node.js
+      knowledge, cool projects made by Community and also have special guests who are influence on Node.js
       at world level.
     </p>
     <p>
       <a href="http://www.eventick.com.br/nodeconfbr" target="_blank">
         Buy your tickets
-      </a> and ensure a vague in this historic NodeConf!
+      </a> and ensure a spot in this historic NodeConf!
     </p>`,
   code_of_conduct_description: `
     <h1>Code of Conduct</h1>
