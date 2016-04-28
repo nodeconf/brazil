@@ -60,6 +60,9 @@ p {
     font-size: 16px;
     line-height: 1.5;
 }
+[v-cloak] {
+  display: none;
+}
 .bg-primary {
     background-color: #f05f40;
 }
