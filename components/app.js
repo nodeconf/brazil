@@ -26,7 +26,8 @@ if (browserLocale()) {
   let locale = browserLocale().split('-').shift()
 
   // Check if the locale is supported
-  if (['en', 'pt'].includes(locale)) {
+  // TODO include en when the locale is supported
+  if (['pt'].includes(locale)) {
     Vue.config.lang = locale
   } else {
     Vue.config.lang = 'pt'
