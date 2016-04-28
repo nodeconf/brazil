@@ -51,7 +51,9 @@ let vm = new Vue({ // eslint-disable-line no-new
       $(`#${id}`).modal()
     },
     toggleLocale (lang) {
-      Vue.config.lang = Vue.config.lang === 'pt' ? 'en' : 'pt'
+      window.alert('Sorry, en-US not supported yet :-(')
+      // TODO uncomment when en is supported
+      // Vue.config.lang = Vue.config.lang === 'pt' ? 'en' : 'pt'
     }
   }
 })
