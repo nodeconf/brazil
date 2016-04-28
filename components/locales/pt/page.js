@@ -18,6 +18,8 @@ export default {
   where_title: 'Será no Teatro Frei Caneca',
   open_map: 'ABRIR NO GOOGLE MAPS',
   want_to_know_you: 'Queremos conhecer você',
+  bronze_sponsorships: 'Patrocinadores Bronze',
+  silver_sponsorships: 'Patrocinadores Prata',
   want_to_know_you_description: `Preencha o box abaixo com seu e-mail e fique
     por dentro de tudo que vai rolar nessa NodeConf Brazil.`,
   where_description: `O evento vai acontecer no Teatro Frei Caneca, local de

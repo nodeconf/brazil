@@ -258,10 +258,7 @@ aside {
     .navbar-default .navbar-toggle {
         margin-right: 10px;
     }
-    .sponsorships-line img {
-        margin-bottom: 20px;
-        margin-left: 15%;
-    }
+
     footer {
         height: 150px;
         padding-top: 29px;
@@ -632,7 +629,7 @@ header .header-content .header-content-inner hr {
         float: left;
     }
     .sponsorships-line img {
-        margin-left: 60px;
+        margin: 0 auto;
     }
     .row {
         margin-right: -15px;
