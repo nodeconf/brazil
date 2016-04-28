@@ -86,5 +86,16 @@ export default [
       twitter: 'https://twitter.com/emerleite'
     },
     description: 'Emerson Macedo é desenvolvedor de software desde a adolescência, trabalhando na área desde 1997. Já atuou em seguradoras, bancos, telecomunicações e portais web. Atualmente é líder técnico na Globo.com e atua em projetos na área de vídeos para internet.'
+  },
+  {
+    name: 'Alberto Souza',
+    slug: 'alberto-souza',
+    job: 'DEVELOPER | We.js',
+    image: '/assets/img/alberto_souza.png',
+    social: {
+      github: 'https://github.com/albertosouza',
+      twitter: 'https://twitter.com/albertosouza_js'
+    },
+    description: 'Oi eu sou programador Javascript e PHP, tenho mais de 9 anos de experiência com desenvolvimento, criei e mantenho o We.js framework e gosto de usar o meu tempo para criar coisas que ajudem a melhorar a vida das pessoas.'
   }
 ]
