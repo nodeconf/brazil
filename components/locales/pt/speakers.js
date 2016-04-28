@@ -75,5 +75,16 @@ export default [
       twitter: 'https://twitter.com/dschenkelman'
     },
     description: 'Damian é um engenheiro na Auth0 trabalhando para tornar o núcleo da aplicação escaláver e performático. Ele é apaixonado por aprender JavaScript, sua especialidade é na área de perfomance e contribuição para softwares de código aberto.'
+  },
+  {
+    name: 'Emerson Macedo',
+    slug: 'emerson-macedo',
+    job: 'LÍDER TÉCNICO | Globo.com',
+    image: '/assets/img/emerson_macedo.png',
+    social: {
+      github: 'https://github.com/emerleite',
+      twitter: 'https://twitter.com/emerleite'
+    },
+    description: 'Emerson Macedo é desenvolvedor de software desde a adolescência, trabalhando na área desde 1997. Já atuou em seguradoras, bancos, telecomunicações e portais web. Atualmente é líder técnico na Globo.com e atua em projetos na área de vídeos para internet.'
   }
 ]
