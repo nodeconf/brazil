@@ -30,8 +30,8 @@ export default [
       Stack JS Development with MEAN". Fanático por Mega Man. JS também!`
   },
   {
-    name: 'Christopher Silva',
-    slug: 'christopher-silva',
+    name: 'Christopher EnyTC',
+    slug: 'christopher-enytc',
     job: 'DEVELOPER EVANGELIST | PAGAR.ME',
     image: '/assets/img/3.png',
     social: {

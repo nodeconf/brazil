@@ -30,7 +30,7 @@ export default [
       Fanatic by Mega Man. JS too!`
   },
   {
-    name: 'Christopher Silva',
+    name: 'Christopher EnyTC',
     slug: 'christopher-enytc',
     job: 'DEVELOPER EVANGELIST | PAGAR.ME',
     image: '/assets/img/3.png',
