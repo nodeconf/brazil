@@ -74,6 +74,6 @@ export default [
       github: 'https://github.com/dschenkelman',
       twitter: 'https://twitter.com/dschenkelman'
     },
-    description: 'Damian é um engenheiro na Auth0 trabalhando para tornar o núcleo da aplicação escaláver e performático. Ele é apaixonado por aprender JavaScript, sua especialidade é na área de perfomance e contribuição softwares de código abert.'
+    description: 'Damian é um engenheiro na Auth0 trabalhando para tornar o núcleo da aplicação escaláver e performático. Ele é apaixonado por aprender JavaScript, sua especialidade é na área de perfomance e contribuição para softwares de código aberto.'
   }
 ]
