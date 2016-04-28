@@ -64,5 +64,16 @@ export default [
       twitter: 'https://twitter.com/maybekatz'
     },
     description: 'Kat Marchán é uma programadora na equipe de CLI do npm. Ela gosta de linguagens de programacão, linguagens de pessoas, linguage inclusivo, e pão de queijo. Ela é porto-riquenha e não fala português muito bem, mas tenta ;)'
+  },
+  {
+    name: 'Damian Schenkelman',
+    slug: 'damian-schenkelman',
+    job: 'ENGINEER | Auth0',
+    image: '/assets/img/damian-schenkelman.png',
+    social: {
+      github: 'https://github.com/dschenkelman',
+      twitter: 'https://twitter.com/dschenkelman'
+    },
+    description: 'Damian é um engenheiro na Auth0 trabalhando para tornar o núcleo da aplicação escaláver e performático. Ele é apaixonado por aprender JavaScript, sua especialidade é na área de perfomance e contribuição softwares de código abert.'
   }
 ]

@@ -20,6 +20,9 @@ export default {
   want_to_know_you: 'Queremos conhecer você',
   bronze_sponsorships: 'Patrocinadores Bronze',
   silver_sponsorships: 'Patrocinadores Prata',
+  new_speakers: 'Fique de olho, anuciaremos novos palestrantes em breve!',
+  be_a_sponsor: 'Seja um patrocinador',
+  want_to_be_sponsor: 'Quero ser um patrocinador',
   want_to_know_you_description: `Preencha o box abaixo com seu e-mail e fique
     por dentro de tudo que vai rolar nessa NodeConf Brazil.`,
   where_description: `O evento vai acontecer no Teatro Frei Caneca, local de
