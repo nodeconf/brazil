@@ -52,7 +52,7 @@ export default [
       linkedin: 'https://www.linkedin.com/in/nelson-f-jr-72297465',
       twitter: 'https://twitter.com/neldevfull'
     },
-    description: 'Desenvolvedor de Software apaixonado por transformar ideias em soluções reais.'
+    description: 'Nelson é estudante de Sistemas de Informação na UNIFACEF em Franca e trabalha remoto de sua cidade São Joaquim da Barra para empresa CargoBR sediada em São Paulo. Apaixonado por desenvolvimento de software, empreendedorismo e tecnologias exponenciais, acredita em futuro brilhante no qual homens e máquinas viverão em um universo singular.'
   },
   {
     name: 'Kat Marchán',
