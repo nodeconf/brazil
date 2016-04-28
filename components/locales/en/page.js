@@ -86,7 +86,7 @@ export default {
     <h2>About this code of conduct</h2>
     <p>
       Code of conduct based on <a href="http://nodeconf.com/code-of-conduct.html">Node Conf's Code of Conduct</a>,
-      <a href="http://confcodeofconduct.com/index-pt-br.html">ConfCodeofConduct.com em Português Brasileiro</a>
+      <a href="http://confcodeofconduct.com/index-pt-br.html">ConfCodeofConduct.com in Brazilian portuguese</a>
       And inspired by <a href="http://2012.jsconf.us/#/about">http://2012.jsconf.us/#/about</a> &amp;
       <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">The Ada Initative</a>.
     </p>
