@@ -72,7 +72,8 @@ $(window).load(function() {
   var renderer = new THREE.CanvasRenderer();
   renderer.setClearColor( 0x202020, 1 );
   renderer.setSize(w, h);
-  header.append(renderer.domElement);
+  $(renderer.domElement).addClass('motion');
+  header.prepend(renderer.domElement);
   
   createParticles();
   update();
@@ -108,6 +109,15 @@ $(window).load(function() {
     renderer.render(scene, camera);
   }
   
+});
+
+$(window).resize(function () {
+  var header = $('header#home');
+  var w = header.width();
+  var h = header.height();
+
+  $('canvas.motion').width(w);
+  $('canvas.motion').height(h);
 });
 
 if (!window.requestAnimationFrame ) {
