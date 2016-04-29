@@ -52,7 +52,11 @@ export default [
       linkedin: 'https://www.linkedin.com/in/nelson-f-jr-72297465',
       twitter: 'https://twitter.com/neldevfull'
     },
-    description: 'Nelson é estudante de Sistemas de Informação na UNIFACEF em Franca e trabalha remoto de sua cidade São Joaquim da Barra para empresa CargoBR sediada em São Paulo. Apaixonado por desenvolvimento de software, empreendedorismo e tecnologias exponenciais, acredita em futuro brilhante no qual homens e máquinas viverão em um universo singular.'
+    description: `
+    Nelson é estudante de Sistemas de Informação na UNIFACEF em Franca e 
+    trabalha remoto de sua cidade São Joaquim da Barra para empresa CargoBR sediada em São Paulo. 
+    Apaixonado por desenvolvimento de software, empreendedorismo e tecnologias exponenciais, 
+    acredita em futuro brilhante no qual homens e máquinas viverão em um universo singular.`
   },
   {
     name: 'Kat Marchán',
@@ -63,7 +67,10 @@ export default [
       github: 'https://github.com/zkat',
       twitter: 'https://twitter.com/maybekatz'
     },
-    description: 'Kat Marchán é uma programadora na equipe de CLI do npm. Ela gosta de linguagens de programacão, linguagens de pessoas, linguage inclusivo, e pão de queijo. Ela é porto-riquenha e não fala português muito bem, mas tenta ;)'
+    description: `
+    Kat Marchán é uma programadora na equipe de CLI do npm. 
+    Ela gosta de linguagens de programacão, linguagens de pessoas, linguage inclusivo, e pão de queijo. 
+    Ela é porto-riquenha e não fala português muito bem, mas tenta ;)`
   },
   {
     name: 'Damian Schenkelman',
@@ -74,7 +81,10 @@ export default [
       github: 'https://github.com/dschenkelman',
       twitter: 'https://twitter.com/dschenkelman'
     },
-    description: 'Damian é um engenheiro na Auth0 trabalhando para tornar o núcleo da aplicação escaláver e performático. Ele é apaixonado por aprender JavaScript, sua especialidade é na área de perfomance e contribuição para softwares de código aberto.'
+    description: `
+    Damian é um engenheiro na Auth0 trabalhando para tornar o núcleo da aplicação escalável e performático. 
+    Ele é apaixonado por aprender JavaScript, sua especialidade é na área de perfomance 
+    e contribuição para softwares de código aberto.`
   },
   {
     name: 'Emerson Macedo',
@@ -85,7 +95,10 @@ export default [
       github: 'https://github.com/emerleite',
       twitter: 'https://twitter.com/emerleite'
     },
-    description: 'Emerson Macedo é desenvolvedor de software desde a adolescência, trabalhando na área desde 1997. Já atuou em seguradoras, bancos, telecomunicações e portais web. Atualmente é líder técnico na Globo.com e atua em projetos na área de vídeos para internet.'
+    description: `
+    Emerson Macedo é desenvolvedor de software desde a adolescência, trabalhando na área desde 1997. 
+    Já atuou em seguradoras, bancos, telecomunicações e portais web. 
+    Atualmente é líder técnico na Globo.com e atua em projetos na área de vídeos para internet.`
   },
   {
     name: 'Alberto Souza',
@@ -96,6 +109,7 @@ export default [
       github: 'https://github.com/albertosouza',
       twitter: 'https://twitter.com/albertosouza_js'
     },
-    description: 'Oi eu sou programador Javascript e PHP, tenho mais de 9 anos de experiência com desenvolvimento, criei e mantenho o We.js framework e gosto de usar o meu tempo para criar coisas que ajudem a melhorar a vida das pessoas.'
+    description: `Oi eu sou programador Javascript e PHP, tenho mais de 9 anos de experiência com desenvolvimento, 
+    criei e mantenho o We.js framework e gosto de usar o meu tempo para criar coisas que ajudem a melhorar a vida das pessoas.`
   }
 ]
