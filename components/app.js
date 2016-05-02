@@ -49,7 +49,13 @@ let vm = new Vue({ // eslint-disable-line no-new
       return this.$lang.lang
     },
     modal (id) {
+      let scrollPosition = document.body.scrollTop
+
+      // Prevent top scrolling
       $(`#${id}`).modal('toggle')
+      .on('hide.bs.modal', () => {
+        document.body.scrollTop = scrollPosition
+      })
     },
     toggleLocale (lang) {
       Vue.config.lang = Vue.config.lang === 'pt' ? 'en' : 'pt'
