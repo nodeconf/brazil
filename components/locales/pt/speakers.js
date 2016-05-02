@@ -52,7 +52,7 @@ export default [
       linkedin: 'https://www.linkedin.com/in/nelson-f-jr-72297465',
       twitter: 'https://twitter.com/neldevfull'
     },
-    description: 'Nelson é estudante de Sistemas de Informação na UNIFACEF em Franca e trabalha remoto de sua cidade São Joaquim da Barra para empresa CargoBR sediada em São Paulo. Apaixonado por desenvolvimento de software, empreendedorismo e tecnologias exponenciais, acredita em futuro brilhante no qual homens e máquinas viverão em um universo singular.'
+    description: 'Nelson é estudante de Sistemas de Informação na UNIFACEF em Franca e trabalha remoto de sua cidade São Joaquim da Barra para empresa CargoBR sediada em São Paulo. Apaixonado por desenvolvimento de software, empreendedorismo e tecnologias exponenciais, acredita em um futuro brilhante no qual homens e máquinas viverão em um universo singular.'
   },
   {
     name: 'Kat Marchán',
@@ -96,6 +96,39 @@ export default [
       github: 'https://github.com/albertosouza',
       twitter: 'https://twitter.com/albertosouza_js'
     },
-    description: 'Oi eu sou programador Javascript e PHP, tenho mais de 9 anos de experiência com desenvolvimento, criei e mantenho o We.js framework e gosto de usar o meu tempo para criar coisas que ajudem a melhorar a vida das pessoas.'
+    description: 'Alberto Souza é programador Javascript e PHP, com mais de 9 anos de experiência em desenvolvimento Web. Criou o We.js, um framework que tem o objetivo de facilitar o trabalho dos desenvolvedores e melhorar a experiência dos usuários em aplicações acessíveis com Node.js'
+  },
+  {
+    name: 'Diego Martins',
+    slug: 'diego-martins',
+    job: 'DEVELOPER | Touch Tecnologia',
+    image: '/assets/img/diego_martins.png',
+    social: {
+      website: 'http://diegopinho.com.br/',
+      github: 'https://github.com/DiegoPinho',
+      twitter: 'https://twitter.com/DiegoPinho'
+    },
+    description: 'Bacharel em Ciência da Computação pela PUC-SP e pós-graduado em Gestão da Tecnologia da Informação pela FIAP. Me interesso muito não só por tecnologia, mas também por processos e gestão. Trabalho com tecnologias web desde 2013 e sempre busco tempo para continuar aprendendo e compartilhar o que sei. Gosto muito de escrever e sou entusiasta em programação pra jogos, modelagem e animação.'
+  },
+  {
+    name: 'Filipe M. Silva',
+    slug: 'filipe-silva',
+    job: 'DEVELOPER | Local 1202',
+    image: '/assets/img/filipe_silva.png',
+    social: {
+      github: 'https://github.com/flpms',
+      twitter: 'https://twitter.com/flpms'
+    },
+    description: 'Desenvolvedor Node já por mais de 3 anos e Front-End há mais de 7 anos, passando por lugares como Apontador, Itaú, Banco Votorantim, Oi e BBC. Amo Javascript desde de o primeiro contato e acredita que precisamos de mais consciência no desenvolvimento.'
+  },
+  {
+    name: 'Erick Wendel',
+    slug: 'erick-wendel',
+    job: 'DEVELOPER | Iterative',
+    image: '/assets/img/erick_wendel.png',
+    social: {
+      twitter: 'https://twitter.com/erickwendeldev'
+    },
+    description: 'Microsoft Student Partner, MSDN Tech Advisor, Instrutor, Palestrante e Vice Presidente do grupo .NET Coders. Fundador e organizador da comunidade .NET Coders Ladies, formando em Análise e Desenvolvimento de Sistemas. Também é MCP e Especialista em Web Development, atualmente desenvolvendo e aventurando-se em NodeJS e TypeScript.'
   }
 ]

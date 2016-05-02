@@ -1076,6 +1076,7 @@ footer {
 .modal-fullscreen .speakers-social {
     text-transform: uppercase;
 }
+
 .modal-fullscreen .speakers-social:not(:first-of-type) {
     margin-left: 4px;
     padding-left: 4px;

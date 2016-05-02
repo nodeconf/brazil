@@ -49,7 +49,7 @@ let vm = new Vue({ // eslint-disable-line no-new
       return this.$lang.lang
     },
     modal (id) {
-      $(`#${id}`).modal()
+      $(`#${id}`).modal('toggle')
     },
     toggleLocale (lang) {
       Vue.config.lang = Vue.config.lang === 'pt' ? 'en' : 'pt'
@@ -68,8 +68,17 @@ vm.$lang.$watch('lang', (lang) => {
  */
 function mergeSpeakers (translated) {
   let speakers = locales.pt.speakers
-  return _.clone(speakers).map((speaker) => _.find(translated, {
+  return _.chain(speakers)
+  .clone(speakers)
+  .map((speaker) => _.find(translated, {
     slug: speaker.slug
   }) || _.find(speakers, { slug: speaker.slug }))
+  .shuffle()
+  .value()
+}
+
+// Enable hot reloading
+if (module && module.hot) {
+  module.hot.accept()
 }
 
