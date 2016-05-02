@@ -12,59 +12,13 @@ $(document).ready(function() {
     }
 });
 
-$(document).ready(
-
-    function() {
-
-        var modalAction;
-        
-        var body = $('body#page-top').get(0);
-        var header = $('nav#mainNav').get(0);
-        var modal = $('#modal-cconduta').get(0);
-        var modalsBtn = $('.modalTrigger');
-
-
-        var btn = $('#code-of-conduct')
-
-        // Get the element that closes the modal
-        var close = $(".close");
-
-        // When the user clicks on the button, open the modal
-        
-        modalsBtn.click(function () {
-           var modalName = $(this).attr('data-modal');
-           
-           modalAction = $('#' + modalName).get(0);
-           body.style.overflow = "hidden";
-           modalAction.style.display = "block";
-           header.style.display = "none";
-        });
-        
-        btn.click(function() {
-            body.style.overflow = "hidden";
-            modal.style.display = "block";
-            header.style.display = "none";
-
-        });
-        // When the user clicks on (x), close the modal
-        close.click(function() {
-            body.style.overflow = "initial";
-            modal.style.display = "none";
-            header.style.display = "block";
-            if (modalAction) {
-                modalAction.style.display = "none";
-            }
-        });
-    }
-)
-
 $(window).load(function() {
   var speed = 8;
   var particles = [];
   var header = $('header#home');
   var w = header.width();
   var h = header.height();
-  
+
   var camera = new THREE.PerspectiveCamera(85, w / h, 1, 4000);
   var scene = new THREE.Scene();
   camera.position.z = 1000;
@@ -74,7 +28,7 @@ $(window).load(function() {
   renderer.setSize(w, h);
   $(renderer.domElement).addClass('motion');
   header.prepend(renderer.domElement);
-  
+
   createParticles();
   update();
 
@@ -98,9 +52,9 @@ $(window).load(function() {
       particles.push(particle);
     }
   }
-  
+
   function update() {
-    requestAnimationFrame( update);  
+    requestAnimationFrame( update);
     for (var i = 0; i < particles.length; i++) {
       particle = particles[i];
       particle.position.z += speed;
@@ -108,7 +62,7 @@ $(window).load(function() {
         }
     renderer.render(scene, camera);
   }
-  
+
 });
 
 $(window).resize(function () {

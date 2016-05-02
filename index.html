@@ -153,7 +153,9 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 text-center" v-for="speaker in speakers">
           <div class="service-box" v-bind="{ id: speaker.slug }">
-            <a href="#" @click.prevent="modal('modal-speaker-' + speaker.slug)"><img v-bind="{ src: speaker.image, alt: speaker.name }" /></a>
+            <a href="#" v-on:click.prevent="modal('modal-speaker-' + speaker.slug)">
+              <img v-bind="{ src: speaker.image, alt: speaker.name }" />
+            </a>
             <h3>{{speaker.name}}</h3>
             <p class="text-muted text-uppercase">{{speaker.job}}</p>
             <hr>
@@ -305,7 +307,7 @@
     </div>
   </div>
 
-  <div class="modal fade modal-fullscreen" v-for="speaker in speakers" v-bind="{ id: 'modal-speaker-' + speaker.slug }" tabindex="-1" role="dialog">
+  <div class="modal fade modal-fullscreen" v-for="speaker in speakers" v-bind="{ id: 'modal-speaker-' + speaker.slug }" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
