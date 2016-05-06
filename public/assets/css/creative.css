@@ -61,7 +61,7 @@ p {
     line-height: 1.5;
 }
 [v-cloak] {
-  display: none;
+    display: none;
 }
 .bg-primary {
     background-color: #f05f40;
@@ -150,13 +150,15 @@ aside {
     .close {
         height: 40px;
     }
+    #modal-schedule .modal-content{
+      margin-left: 20px;
+    }
     .modal-content h2 {
         font-size: 30px;
     }
     .modal-content p {
         font-size: 20px;
     }
-
     .motion {
         position: absolute;
         left: 0;
@@ -266,7 +268,6 @@ aside {
     .navbar-default .navbar-toggle {
         margin-right: 10px;
     }
-
     footer {
         height: 150px;
         padding-top: 29px;
@@ -303,6 +304,42 @@ aside {
     .btn-xl {
         padding: 10px 25px;
     }
+    .schedule {
+        width: 100%;
+        height: 1368px;
+    }
+    .schedule nav {
+        width: 100%;
+    }
+    .schedule ul {
+        display: flex;
+        padding-left:0px;
+        margin: 0px;
+    }
+    .schedule li:first-child {
+        height: 60px;
+        padding-top: 10px;
+    }
+    .schedule li:nth-child(2) {
+        height: 90px;
+        padding-top: 10px;
+    }
+    .schedule a {
+        width: 134px;
+        font-size: 26px;
+    }
+    .schedule table{
+      width: 100%;
+    }
+    .schedule thead tr {
+        height: 40px;
+        font-size: 10px;
+    }
+    .schedule tbody td{
+      height: 40px;
+      font-size: 10px;
+    }
+
 }
 @media(min-width:768px) {
     p.email {
@@ -331,6 +368,45 @@ aside {
     .local {
         padding-left: 10px;
         font-size: 16px;
+    }
+    .modal-content{
+      margin: auto;
+    }
+    .schedule {
+        width: 1050px;
+        height: 1368px;
+    }
+    .schedule nav {
+        width: 100%;
+    }
+    .schedule ul {
+        display: flex;
+        padding-left:0px;
+        margin: 0px;
+    }
+    .schedule li:first-child {
+        height: 90px;
+        padding-top: 10px;
+    }
+    .schedule li:nth-child(2) {
+        height: 90px;
+        padding-top: 10px;
+    }
+    .schedule a {
+        width: 50%;
+        font-size: 45px;
+    }
+    .schedule table{
+      width: 100%;
+    }
+    .schedule thead tr {
+        height: 92px;
+        font-size: 20px;
+    }
+    .schedule tbody td{
+      font-size: 20px;
+      height: 92px;
+      text-align: center;
     }
 }
 @media(min-width:768px) {
@@ -1010,7 +1086,7 @@ footer {
 .modal-content {
     position: relative;
     background-color: #000;
-    margin: auto;
+
     padding: 0;
     width: 80%;
     height: 100%;
@@ -1032,8 +1108,7 @@ footer {
     font-family: SourceSansProLight;
 }
 .modal-content a {
-  font-family: SourseSansProRegular;
-  color: #72bd53;
+    color: #72bd53;
 }
 #modal-cconduta a {
     color: #ffffff;
@@ -1043,40 +1118,86 @@ footer {
     color: #ffffff;
     font-weight: bolder;
 }
+.schedule li:first-child {
+    list-style-type: none;
+    text-align: center;
+}
+.schedule li:nth-child(2) {
+    list-style-type: none;
+    text-align: center;
+}
+.schedule a {
+    color: #ffffff;
+    font-family: SourceSansProIt;
+    vertical-align: middle;
+    text-decoration: none;
+    opacity: 0.6;
+    background-color: #72bd53;
+}
+.schedule a:active, a:focus {
+    opacity: 0.9;
+}
+.schedule a:first-child {
+    border-top-left-radius: 8px;
+}
+.schedule a:nth-child(2) {
+    border-top-right-radius: 8px;
+}
+.schedule thead tr {
+    background-color: #72bd53;
+    font-family: SourceSansProSemibold;
+    text-align: center;
+}
+
+.schedule tbody{
+  font-family: SourceSansProLight;
+  background-color: #ffffff;
+  color: #484848;
+  text-align: center;
+}
+
+.schedule tbody tr.talk-break{
+  background-color: #ffffff;
+}
+
+.schedule tbody tr.light-talk{
+  background-color: rgb(223,250,218);
+}
+
+.schedule tbody tr.short-talk{
+  background-color: rgb(192,243,181);
+}
+
+.schedule tbody tr.big-talk{
+  background-color: rgb(160,235,143);
+}
 
 .pointer {
     cursor: pointer;
 }
-
 .modal-fullscreen {
     z-index: 999999;
 }
-
 .modal-fullscreen .modal-dialog {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-
 .modal-fullscreen .modal-content {
-  height: auto;
-  min-height: 100%;
-  border-radius: 0;
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
 }
-
 .modal-fullscreen .modal-header {
-  margin-top: 20px;
+    margin-top: 20px;
 }
-
 .modal-fullscreen .modal-body, .modal-fullscreen .modal-header {
     border: none;
 }
-
 .modal-fullscreen .speakers-social {
     text-transform: uppercase;
 }
-
 .modal-fullscreen .speakers-social:not(:first-of-type) {
     margin-left: 4px;
     padding-left: 4px;
