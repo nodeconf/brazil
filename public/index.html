@@ -212,7 +212,7 @@
                 </div>
                 <div class="row">
                     <div class="text-center col-xs-12">
-                        <a href="https://www.google.com.br/maps/place/Teatro+Shopping+Frei+Caneca/@-23.5539296,-46.6551045,17z/data=!3m1!4b1!4m2!3m1!1s0x94ce58353ca914ff:0x4af6638b77d81ab6?hl=en" target="_blank" class="btn btn-secondary btn-maps btn-xl page-scroll">{{ $t('page.open_map') }}</a>
+                        <a href="https://www.google.com.br/maps/place/Teatro+Shopping+Frei+Caneca/@-23.5539296,-46.6551045,17z/data=!3m1!4b1!4m2!3m1!1s0x94ce58353ca914ff:0x4af6638b77d81ab6?hl=en" target="_blank" class="btn btn-secondary btn-maps btn-xl">{{ $t('page.open_map') }}</a>
                     </div>
                 </div>
             </div>
@@ -223,32 +223,44 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="sponsorships-heading">{{ $t('page.silver_sponsorships') }}</h2>
+                    <h2 class="sponsorships-heading">PATROCINADORES</h2>
                     <hr class="light">
                 </div>
             </div>
             <div class="row sponsorships-line">
-                <div class="col-lg-4 col-lg-offset-4">
+                <div class="col-lg-4">
+                    <a href="http://www.uolhost.uol.com.br/"><img src="/assets/img/uol_host.png" class="img-responsive" alt="Uol Host" /></a>
+                </div>
+                <div class="col-lg-4">
                     <a href="http://vizir.com.br/"><img src="/assets/img/vizir.png" class="img-responsive" alt="Vizir" /></a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="http://wisepix.com.br/"><img src="/assets/img/wisepix.png" class="img-responsive" alt="Wisepix" /></a>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="sponsorships-heading">{{ $t('page.bronze_sponsorships') }}</h2>
+                    <h2 class="sponsorships-heading">APOIADORES</h2>
                     <hr class="light">
                 </div>
             </div>
             <div class="row sponsorships-line">
-                <div class="col-lg-4 col-lg-offset-4">
+              <div class="col-lg-4">
+                <a href="http://blog.netcoders.com.br/"><img src="/assets/img/netcoders.png" class="img-responsive" alt="Net Coders" /></a>
+              </div>
+                <div class="col-lg-4">
                     <a href="https://auth0.com/"><img src="/assets/img/auth0.png" class="img-responsive" alt="Auth0" /></a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="https://braziljs.org/"><img src="/assets/img/braziljs.png" class="img-responsive" alt="Brazil JS" /></a>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
-                <a href="mailto:nodebr@nodebr.org?subject={{ $t('page.want_to_be_sponsor') }}" target="_blank" class="btn btn-success btn-lg">{{ $t('page.be_a_sponsor') }}</a>
+                <a href="mailto:nodebr@nodebr.org?subject={{ $t('page.want_to_be_sponsor') }}" target="_blank" class="btn btn-secondary btn-sponsor btn-xl">{{ $t('page.be_a_sponsor') }}</a>
             </div>
         </div>
     </section>
@@ -334,8 +346,12 @@
                         <nav>
                             <!-- Palestras mudam referente ao dia selecionado -->
                             <ul>
-                                <a href="#"><li id="#day1">Dia 1</li></a>
-                                <a href="#"><li id="#day2">Dia 2</li></a>
+                                <a href="#">
+                                    <li id="#day1">Dia 1</li>
+                                </a>
+                                <a href="#">
+                                    <li id="#day2">Dia 2</li>
+                                </a>
                             </ul>
                         </nav>
                         <table>
@@ -346,23 +362,19 @@
                                 <td>ESTRUTURA</td>
                             </thead>
                             <tbody>
-                              <!-- Itera em uma lista de palestras e aplica o css específico ao tipo da palestra -->
+                                <!-- Itera em uma lista de palestras e aplica o css específico ao tipo da palestra -->
                                 <tr v-bind:class="{ 'light-talk': {{talk.type == 'Light Talk'}} , 'short-talk': {{talk.type == 'Short Talk'}}, 'big-talk': {{talk.type == 'Big Talk'}}, 'talk-break': {{talk.type == 'Talk Break'}} }">
                                     <td>
-                                        {{talk.time}}
-                                        TESTE
+                                        {{talk.time}} TESTE
                                     </td>
                                     <td>
-                                        {{talk.speaker}}
-                                        TESTE
+                                        {{talk.speaker}} TESTE
                                     </td>
                                     <td>
-                                        {{talk.title}}
-                                        TESTE
+                                        {{talk.title}} TESTE
                                     </td>
                                     <td>
-                                        {{talk.type}}
-                                        TESTE
+                                        {{talk.type}} TESTE
                                     </td>
                                 </tr>
                             </tbody>

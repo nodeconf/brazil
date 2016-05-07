@@ -1203,3 +1203,36 @@ footer {
     padding-left: 4px;
     border-left: 2px solid #72bd53;
 }
+.btn-sponsor{
+  background-color: rgb(246,246,245);
+  border: solid 2px #72bd53;
+  color: #72bd53;
+}
+.btn-sponsor:hover{
+  background-color: #72bd53;
+  color: rgb(246,246,245);
+}
+.btn-sponsor:active:hover{
+  background-color: #72bd53;
+  color: rgb(246,246,245);
+}
+img.img-responsive[alt="Uol Host"] {
+    height: 116px;
+}
+img.img-responsive[alt="Vizir"] {
+    height: 80px;
+    margin-top: 21px;
+}
+img.img-responsive[alt="Wisepix"] {
+    height: 75px;
+    margin-top: 20px;
+}
+img.img-responsive[alt="Auth0"] {
+    height: 65px;
+}
+img.img-responsive[alt="Net Coders"] {
+    height: 65px;
+}
+img.img-responsive[alt="Brazil JS"] {
+    height: 70px;
+}
