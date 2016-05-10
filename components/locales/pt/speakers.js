@@ -130,5 +130,16 @@ export default [
       twitter: 'https://twitter.com/erickwendeldev'
     },
     description: 'Microsoft Student Partner, MSDN Tech Advisor, Instrutor, Palestrante e Vice Presidente do grupo .NET Coders. Fundador e organizador da comunidade .NET Coders Ladies, formando em Análise e Desenvolvimento de Sistemas. Também é MCP e Especialista em Web Development, atualmente desenvolvendo e aventurando-se em NodeJS e TypeScript.'
+  },
+  {
+    name: 'Bruno Fidelis',
+    slug: 'bruno-fidelis',
+    job: 'DEVELOPER | KingHost',
+    image: '/assets/img/bruno_fidelis.png',
+    social: {
+      twitter: 'https://twitter.com/btfidelis004',
+      github: 'https://github.com/btfidelis'
+    },
+    description: 'Atualmente trabalhando como desenvolvedor na KingHost. Adoro estudar novas tecnologias e criar soluções inteligentes a partir delas.'
   }
 ]
