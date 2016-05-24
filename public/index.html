@@ -75,7 +75,7 @@
                         <a class="page-scroll" href="#speakers">{{ $t('page.speakers') }}</a>
                     </li>
                     <li>
-                        <!-- <a href="#" @click.prevent="modal('modal-schedule')">{{ $t('page.schedule') }}</a> -->
+                        <a href="#" @click.prevent="modal('modal-schedule')">{{ $t('page.schedule') }}</a> 
                     </li>
                     <li>
                         <a class="page-scroll" href="#local">{{ $t('page.place') }}</a>
@@ -347,10 +347,10 @@
                             <!-- Palestras mudam referente ao dia selecionado -->
                             <ul>
                                 <a href="#">
-                                    <li id="#day1">Dia 1</li>
+                                    <li id="#day1" v-on:click.prevent="showDay(1)">Dia 1</li>
                                 </a>
                                 <a href="#">
-                                    <li id="#day2">Dia 2</li>
+                                    <li id="#day2" v-on:click.prevent="showDay(2)">Dia 2</li>
                                 </a>
                             </ul>
                         </nav>
@@ -363,18 +363,18 @@
                             </thead>
                             <tbody>
                                 <!-- Itera em uma lista de palestras e aplica o css específico ao tipo da palestra -->
-                                <tr v-bind:class="{ 'light-talk': {{talk.type == 'Light Talk'}} , 'short-talk': {{talk.type == 'Short Talk'}}, 'big-talk': {{talk.type == 'Big Talk'}}, 'talk-break': {{talk.type == 'Talk Break'}} }">
+                                <tr v-for="talk in talks" class="{{talk.type | dashed}}">
                                     <td>
-                                        {{talk.time}} TESTE
+                                        {{talk.time}} 
                                     </td>
                                     <td>
-                                        {{talk.speaker}} TESTE
+                                        {{talk.speaker}} 
                                     </td>
                                     <td>
-                                        {{talk.title}} TESTE
+                                        {{talk.title}} 
                                     </td>
                                     <td>
-                                        {{talk.type}} TESTE
+                                        {{talk.type}} 
                                     </td>
                                 </tr>
                             </tbody>

@@ -141,5 +141,26 @@ export default [
       github: 'https://github.com/btfidelis'
     },
     description: 'Atualmente trabalhando como desenvolvedor na KingHost. Adoro estudar novas tecnologias e criar soluções inteligentes a partir delas.'
+  },
+  {
+    name: 'Itacir Pompeu',
+    slug: 'itacir-pompeu',
+    job: 'FULLSTACK | MyInfoShare(TVG)',
+    image: '/assets/img/itacir_pompeu.png',
+    social: {
+      twitter: 'https://twitter.com/Pompeulimp',
+      github: 'https://github.com/Pompeu'
+    },
+    description: 'Formado em Sistemas para Internet pelo IF goiano, FullStack Developer em uma solução de compartilhamento de dados na MyinfoShare. Professor de NodeJS na WebSchool.i e apaixonado por OpenSource, código, algoritmos e competições de programação.'
+  },
+  {
+    name: 'Bruno Cartolari',
+    slug: 'bruno-cartolari',
+    job: 'ARQUITETO DE SISTEMAS | Vizir',
+    image: '/assets/img/bruno_cartolari.png',
+    social: {
+      github: 'https://github.com/cartolari'
+    },
+    description: 'Bruno Cartolari é Arquiteto de Sistemas na Vizir há 2 anos, desenvolve softwares há 8 anos embora só tenha 20 anos de idade.  A frase que ele mais fala na empresa é “TEM TESTE?” pois acredita que trabalhar com TDD é uma das principais práticas de um sistema de qualidade.'
   }
 ]

@@ -15,7 +15,8 @@ let locales = {
   },
   pt: {
     page: require('./locales/pt/page').default,
-    speakers: require('./locales/pt/speakers').default
+    speakers: require('./locales/pt/speakers').default,
+    talks: require('./locales/pt/talks').default
   }
 }
 
@@ -37,11 +38,18 @@ if (browserLocale()) {
   Vue.config.lang = 'pt'
 }
 
+Vue.filter('dashed', (value) => {
+  return value
+    .toLowerCase()
+    .replace(' ', '-')
+})
+
 let vm = new Vue({ // eslint-disable-line no-new
   el: 'body',
   data () {
     return {
-      speakers: mergeSpeakers(locales[this.lang()].speakers)
+      speakers: mergeSpeakers(locales[this.lang()].speakers),
+      talks: mergeTalks(locales[this.lang()].talks, 'day1')
     }
   },
   methods: {
@@ -59,18 +67,22 @@ let vm = new Vue({ // eslint-disable-line no-new
     },
     toggleLocale (lang) {
       Vue.config.lang = Vue.config.lang === 'pt' ? 'en' : 'pt'
+    },
+    showDay (dayNumber) {
+      vm.talks = mergeTalks(locales[vm.lang()].talks, 'day'+dayNumber) 
     }
   }
 })
 
 vm.$lang.$watch('lang', (lang) => {
   vm.speakers = mergeSpeakers(locales[vm.lang()].speakers)
+  vm.talks = mergeTalks(locales[vm.lang()].talks, 'day1')
 })
 
 /**
- * Returns all speakers and replace those who have translations
- * @param {Array} translated An array with translated speakers
- * @return {Array} A new array with every speaker replacing those who have translation
+ * returns all speakers and replace those who have translations
+ * @param {array} translated an array with translated speakers
+ * @return {array} a new array with every speaker replacing those who have translation
  */
 function mergeSpeakers (translated) {
   let speakers = locales.pt.speakers
@@ -80,6 +92,22 @@ function mergeSpeakers (translated) {
     slug: speaker.slug
   }) || _.find(speakers, { slug: speaker.slug }))
   .shuffle()
+  .value()
+}
+
+/**
+ * returns all talks and replace those who have translations
+ * @param {array} translated an array with translated talks 
+ * @return {array} a new array with every talk replacing those who have translation
+ */
+function mergeTalks (translated, day) {
+  console.log(Vue.config.day)
+  let talks = locales.pt.talks[day]
+  return _.chain(talks)
+  .clone(talks)
+  .map((talk) => _.find(translated, {
+    time: talk.time
+  }) || _.find(talks, { time: talk.time }))
   .value()
 }
 

@@ -113,5 +113,71 @@ export default [
     description: `
     Hi I'm Javascript and PHP programmer, I have over 9 years of experience with development
     I created and maintain the framework We.js and like to use my time to create things that help improve people's lives.`
+  },
+  {
+    name: 'Diego Martins',
+    slug: 'diego-martins',
+    job: 'DEVELOPER | Touch Tecnologia',
+    image: '/assets/img/diego_martins.png',
+    social: {
+      website: 'http://diegopinho.com.br/',
+      github: 'https://github.com/DiegoPinho',
+      twitter: 'https://twitter.com/DiegoPinho'
+    },
+    description: `Computer Science Bachelor by PUC-SP and Postgraduate in Technology Information Management by FIAP. I'm very interested not only for technology, but management process too. Work with web technologies since 2013 and ever find time to keep learn and share knowledge. I like very much write and an game developer enthusiast.`
+  },
+  {
+    name: 'Filipe M. Silva',
+    slug: 'filipe-silva',
+    job: 'DEVELOPER | Local 1202',
+    image: '/assets/img/filipe_silva.png',
+    social: {
+      github: 'https://github.com/flpms',
+      twitter: 'https://twitter.com/flpms'
+    },
+    description: 'Node.js developer already over 3 years and Frontend over 7 years, worked at Apontador, Itaú, Votorantim Bank, Oi and BBC. Love JS since the first contact and believe we need more awareness on development.'
+  },
+  {
+    name: 'Erick Wendel',
+    slug: 'erick-wendel',
+    job: 'DEVELOPER | Iterative',
+    image: '/assets/img/erick_wendel.png',
+    social: {
+      twitter: 'https://twitter.com/erickwendeldev'
+    },
+    description: 'Microsoft Student Partner, MSDN Tech Advisor, Instructor, Speaker, VP of .NET Coders Group, Founder and Organizer of .NET Coders Ladies, degree in analysis and systems development. MCP and Web Development Specialist, now developing and adventuring in Node.js and TypScript.'
+  },
+  {
+    name: 'Bruno Fidelis',
+    slug: 'bruno-fidelis',
+    job: 'DEVELOPER | KingHost',
+    image: '/assets/img/bruno_fidelis.png',
+    social: {
+      twitter: 'https://twitter.com/btfidelis004',
+      github: 'https://github.com/btfidelis'
+    },
+    description: 'Developer at KingHost, Love learn new technologies and build smart solutions with this technologies.'
+  },
+  {
+    name: 'Itacir Pompeu',
+    slug: 'itacir-pompeu',
+    job: 'FULLSTACK | MyInfoShare(TVG)',
+    image: '/assets/img/itacir_pompeu.png',
+    social: {
+      twitter: 'https://twitter.com/Pompeulimp',
+      github: 'https://github.com/Pompeu'
+    },
+    description: 'Degree in Systems for Internet at IF in Goias, FullStack Developer in a solution for sharing data at MyInfoShare. Node.js teacher on WebSchool.io and lover of OpenSource, code, algoritms and hackathons.'
+  },
+  {
+    name: 'Bruno Cartolari',
+    slug: 'bruno-cartolari',
+    job: 'SOFTWARE ARCHITECT | Vizir',
+    image: '/assets/img/bruno_cartolari.png',
+    social: {
+      github: 'https://github.com/cartolari'
+    },
+    description: 'Bruno Cartolari is a System Architect at Vizir over 2 years, develop software over 8 years, although only 20 years old. The sentence he speaks more in the company is: "Are you testing?", because he believe works with TDD is a key for develop a quality system.'
   }
+
 ]
