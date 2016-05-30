@@ -53,7 +53,7 @@ export default [
       twitter: 'https://twitter.com/neldevfull'
     },
     description: `
-     Nelson is student of Information Systems in the UNIFACEF in Franca and 
+     Nelson is student of Information Systems in the UNIFACEF in Franca and
      work remote your city São Joaquim da Barra to company CargoBR in São Paulo
      Technology lover, entrepreneurship and exponential technologies,
      believe in bright future in which men and machines lived in a singular universe.`
@@ -97,7 +97,7 @@ export default [
       twitter: 'https://twitter.com/emerleite'
     },
     description: `
-    Emerson Macedo is a software developer from adolescence, 
+    Emerson Macedo is a software developer from adolescence,
     working in the area since 1997. He has worked in insurance, banking, telecommunications and web portals.
     He currently is technical leader in the Globo.com and operates projects in the area of videos for internet.`
   },
@@ -124,7 +124,11 @@ export default [
       github: 'https://github.com/DiegoPinho',
       twitter: 'https://twitter.com/DiegoPinho'
     },
-    description: `Computer Science Bachelor by PUC-SP and Postgraduate in Technology Information Management by FIAP. I'm very interested not only for technology, but management process too. Work with web technologies since 2013 and ever find time to keep learn and share knowledge. I like very much write and an game developer enthusiast.`
+    description: `Computer Science Bachelor by PUC-SP and Postgraduate in
+      Technology Information Management by FIAP. I'm very interested not only
+      for technology, but management process too. Work with web technologies
+      since 2013 and ever find time to keep learn and share knowledge. I
+      like very much write and an game developer enthusiast.`
   },
   {
     name: 'Filipe M. Silva',
