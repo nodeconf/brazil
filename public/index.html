@@ -75,7 +75,7 @@
                         <a class="page-scroll" href="#speakers">{{ $t('page.speakers') }}</a>
                     </li>
                     <li>
-                        <a href="#" @click.prevent="modal('modal-schedule')">{{ $t('page.schedule') }}</a> 
+                        <a class="page-scroll" href="#schedule">{{ $t('page.schedule') }}</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#local">{{ $t('page.place') }}</a>
@@ -167,6 +167,52 @@
                 <div class="row col-xs-12">
                     <a href="http://www.eventick.com.br/nodeconfbr" target="_blank" class="btn btn-success btn-buyticket2 btn-xl page-scroll">{{ $t('page.buy_tickets_v2') }}</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 text-center text-center" style="margin-bottom: 20px">
+                    <h2 class="section-heading" style="color: #828282">{{ $t('page.schedule') }}</h2>
+                </div>
+            </div>
+            <div class="schedule">
+                <nav>
+                    <ul>
+                        <a href="#" @click.prevent="schedule.day = 1" :class="{ active: schedule.day === 1 }">
+                            <li>Dia 1</li>
+                        </a>
+                        <a href="#" @click.prevent="schedule.day = 2" :class="{ active: schedule.day === 2 }">
+                            <li>Dia 2</li>
+                        </a>
+                    </ul>
+                </nav>
+                <table>
+                    <thead>
+                        <td>HORÁRIO</td>
+                        <td>PALESTRANTE</td>
+                        <td>TÍTULO</td>
+                        <td>ESTRUTURA</td>
+                    </thead>
+                    <tbody>
+                        <template v-for="data in schedule.data" v-if="data.day === schedule.day">
+                            <tr class="pointer" v-on:click.prevent="modal('modal-speaker-' + data.speaker_slug)" :class="data.type" v-if="data.speaker_slug">
+                                <td>{{data.time}}</td>
+                                <td>{{data.speaker.name}}</td>
+                                <td>{{data.speaker.speak.title}}</td>
+                                <td>{{$t('page.' + data.type)}}</td>
+                            </tr>
+                            <tr v-else :class="data.type">
+                                <td>{{data.time}}</td>
+                                <td></td>
+                                <td>{{data.title}}</td>
+                                <td>{{$t('page.' + data.type)}}</td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
@@ -329,57 +375,9 @@
                     <h1>{{speaker.name}}</h1>
                     <a v-for="(name, link) in speaker.social" class="speakers-social" v-bind="{ href: link }">{{name}}</a>
                     <p>{{{speaker.description}}}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="modal fade modal-fullscreen" id="modal-schedule" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn btn-default pull-right" data-dismiss="modal">{{ $t('page.close') }}</button>
-                </div>
-                <div class="modal-body">
-                    <div class="schedule">
-                        <nav>
-                            <!-- Palestras mudam referente ao dia selecionado -->
-                            <ul>
-                                <a href="#">
-                                    <li id="#day1" v-on:click.prevent="showDay(1)">Dia 1</li>
-                                </a>
-                                <a href="#">
-                                    <li id="#day2" v-on:click.prevent="showDay(2)">Dia 2</li>
-                                </a>
-                            </ul>
-                        </nav>
-                        <table>
-                            <thead>
-                                <td>HORÁRIO</td>
-                                <td>PALESTRANTE</td>
-                                <td>TÍTULO</td>
-                                <td>ESTRUTURA</td>
-                            </thead>
-                            <tbody>
-                                <!-- Itera em uma lista de palestras e aplica o css específico ao tipo da palestra -->
-                                <tr v-for="talk in talks" class="{{talk.type | dashed}}">
-                                    <td>
-                                        {{talk.time}} 
-                                    </td>
-                                    <td>
-                                        {{talk.speaker}} 
-                                    </td>
-                                    <td>
-                                        {{talk.title}} 
-                                    </td>
-                                    <td>
-                                        {{talk.type}} 
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <br>
+                    <h3 style="color: #72bd53">{{speaker.speak.title}}</h3>
+                    <p>{{{speaker.speak.description}}}</p>
                 </div>
             </div>
         </div>

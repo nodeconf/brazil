@@ -5,6 +5,7 @@ import Vuei18n from 'vue-i18n'
 import browserLocale from 'browser-locale'
 import $ from 'jquery'
 import _ from 'lodash'
+import schedule from './schedule'
 
 Vue.use(Vuei18n)
 
@@ -15,8 +16,7 @@ let locales = {
   },
   pt: {
     page: require('./locales/pt/page').default,
-    speakers: require('./locales/pt/speakers').default,
-    talks: require('./locales/pt/talks').default
+    speakers: require('./locales/pt/speakers').default
   }
 }
 
@@ -47,9 +47,14 @@ Vue.filter('dashed', (value) => {
 let vm = new Vue({ // eslint-disable-line no-new
   el: 'body',
   data () {
+    let speakers = mergeSpeakers(locales[this.lang()].speakers)
+
     return {
-      speakers: mergeSpeakers(locales[this.lang()].speakers),
-      talks: mergeTalks(locales[this.lang()].talks, 'day1')
+      speakers,
+      schedule: {
+        day: 1,
+        data: buildSchedule(schedule, speakers)
+      }
     }
   },
   methods: {
@@ -67,16 +72,13 @@ let vm = new Vue({ // eslint-disable-line no-new
     },
     toggleLocale (lang) {
       Vue.config.lang = Vue.config.lang === 'pt' ? 'en' : 'pt'
-    },
-    showDay (dayNumber) {
-      vm.talks = mergeTalks(locales[vm.lang()].talks, 'day'+dayNumber) 
     }
   }
 })
 
 vm.$lang.$watch('lang', (lang) => {
   vm.speakers = mergeSpeakers(locales[vm.lang()].speakers)
-  vm.talks = mergeTalks(locales[vm.lang()].talks, 'day1')
+  vm.schedule.data = buildSchedule(vm.schedule.data, vm.speakers)
 })
 
 /**
@@ -88,27 +90,31 @@ function mergeSpeakers (translated) {
   let speakers = locales.pt.speakers
   return _.chain(speakers)
   .clone(speakers)
-  .map((speaker) => _.find(translated, {
-    slug: speaker.slug
-  }) || _.find(speakers, { slug: speaker.slug }))
+  .map((speaker) => _.merge(
+    speaker,
+    _.find(translated, {
+      slug: speaker.slug
+    })
+  ))
   .shuffle()
   .value()
 }
 
 /**
- * returns all talks and replace those who have translations
- * @param {array} translated an array with translated talks 
- * @return {array} a new array with every talk replacing those who have translation
+ * Inserts each speaker into the proper schedule item
+ * @param {Array} schedule An array containing the schedule items
+ * @param {Array} speakers An array containing the speakers
+ * @return {Array} An array with the modified schedule containing the speaker
  */
-function mergeTalks (translated, day) {
-  console.log(Vue.config.day)
-  let talks = locales.pt.talks[day]
-  return _.chain(talks)
-  .clone(talks)
-  .map((talk) => _.find(translated, {
-    time: talk.time
-  }) || _.find(talks, { time: talk.time }))
-  .value()
+function buildSchedule (schedule, speakers) {
+  return schedule
+  .map((data) => {
+    if (data.speaker_slug) {
+      data.speaker = _.find(speakers, { slug: data.speaker_slug })
+    }
+
+    return data
+  })
 }
 
 // Enable hot reloading

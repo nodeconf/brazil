@@ -1,6 +1,9 @@
 'use strict'
 
 export default {
+  'big_talk': 'Talk longa',
+  'short_talk': 'Talk curta',
+  'talk_break': 'Break',
   read_in_locale: 'READ IN ENGLISH',
   date: '4 e 5 de Julho',
   location: 'São Paulo, Brasil',
