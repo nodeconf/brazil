@@ -35,6 +35,10 @@ export default {
   footnote: 'Organizers, sponsors and participants are obliged to follow the Code of Conduct.',
   bronze_sponsorships: 'Bronze Sponsorships',
   silver_sponsorships: 'Silver Sponsorships',
+  time: 'SCHEDULE',
+  speaker: 'SPEAKER',
+  title: 'TITLE',
+  type: 'TYPE',
   event_description: `
     <p>
       This is the first edition of NodeConf in Latin America and is also the first major event focused

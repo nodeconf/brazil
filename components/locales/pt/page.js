@@ -37,6 +37,10 @@ export default {
   doubts_contact: 'dúvidas: nodebr@nodebr.org',
   footnote: `Organizadores, patrocinadores e participantes são obrigados a
     seguir o Código de Conduta.`,
+  time: 'HORÁRIO',
+  speaker: 'PALESTRANTE',
+  title: 'TITULO',
+  type: 'TIPO',
   event_description: `
     <p>
       Esta é a primeira edição da NodeConf na América Latina e é também o

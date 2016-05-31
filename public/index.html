@@ -191,10 +191,10 @@
                 </nav>
                 <table>
                     <thead>
-                        <td>HORÁRIO</td>
-                        <td>PALESTRANTE</td>
-                        <td>TÍTULO</td>
-                        <td>ESTRUTURA</td>
+                        <td>{{$t('page.time')}}</td>
+                        <td>{{$t('page.speaker')}}</td>
+                        <td>{{$t('page.title')}}</td>
+                        <td>{{$t('page.type')}}</td>
                     </thead>
                     <tbody>
                         <template v-for="data in schedule.data" v-if="data.day === schedule.day">
