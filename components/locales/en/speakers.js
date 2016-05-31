@@ -11,9 +11,13 @@ export default [
       twitter: 'https://twitter.com/ivan_seidel'
     },
     description: `
-        Ivan is a student at te Federal University of ABC, has two companies in the areas of
+        Ivan is a student at the Federal University of ABC, has two companies in the areas of
         Education and Advertising. Attends robotics competitions in Brazil and abroad, has experience
-        in Hardware and Software.`
+        in Hardware and Software.`,
+    speak: {
+      title: `What's up, NodeJS?`,
+      description: 'Test'
+    }
   },
   {
     name: 'Adam Bretz',
@@ -27,7 +31,17 @@ export default [
     description: `
       Adam develops JS for almost a decade, active in the Open Source community
       mostly in tools of Hapi ecosystem. He is co-author of "Full Stack JS Development with MEAN".
-      Fanatic by Mega Man. JS too!`
+      Mega Man fanatic. JS too!`,
+    speak: {
+      title: 'The Big Bang in the hapi Universe',
+      description: `In this talk, I'll take you all on a whirlwind tour of the
+        ever-expanding hapi universe. We'll start with the "big bang event" -
+        talk about the what, how, and why it happened. Then we'll take a rapid
+        fire tour of several of the higher-order modules in the hapi universe.
+        At the end, you should have a better understanding of what the hapi
+        universe has to offer and what you can use to help jumpstart your next
+        project.`
+    }
   },
   {
     name: 'Christopher EnyTC',

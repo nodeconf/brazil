@@ -33,14 +33,8 @@ export default [
       principalmente em ferramentas do ecossistema Hapi. É co-autor de "Full
       Stack JS Development with MEAN". Fanático por Mega Man. JS também!`,
     speak: {
-      title: 'The Big Bang in the hapi Universe',
-      description: `In this talk, I'll take you all on a whirlwind tour of the
-        ever-expanding hapi universe. We'll start with the "big bang event" -
-        talk about the what, how, and why it happened. Then we'll take a rapid
-        fire tour of several of the higher-order modules in the hapi universe.
-        At the end, you should have a better understanding of what the hapi
-        universe has to offer and what you can use to help jumpstart your next
-        project.`
+      title: 'O Big Bang no universo hapi',
+      description: `Nesta apresentação, eu vou levá-lo em uma viagem pelo sempre em expansão universo hapi. Começaremos pelo "evento big bang" - falando o quê, como e por que isso aconteceu. Em seguida faremos um rápida passeio pelos módulos de ordem superior do universo hapi. Ao final, você terá um melhor entendimento do que o universo hapi têm para oferecer e o que você pode usar para rapidamente começar seu próximo projeto.`
     }
   },
   {
