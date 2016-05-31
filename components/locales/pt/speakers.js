@@ -126,15 +126,24 @@ export default [
       aprender JavaScript, sua especialidade é na área de perfomance e
       contribuição para softwares de código aberto.`,
     speak: {
-      title: 'The dirty secrets of building large, highly available, scalable HTTP APIs',
-      description: `When you first start building an API for a new product you
-        mostly focus on getting an MVP ready, with the goal of shipping as soon
-        as possible so you can get feedback from customers. If you are lucky
-        enough, your product will be successful and you will have to start
-        worrying about things like authentication, authorization, documentation,
-        validation, rate limiting, geo-redundancy, and no downtime deployments.
-        In this talk I will go over some real life examples of our experience
-        evolving our APIs at Auth0 and some of the tools we use for that.`
+      title: 'Os segredos da criação de grandes, altamente disponíveis, e escaláveis APIs HTTP',
+      description: `
+          Quando você começa a criar a API de seu
+        novo produto, o foco é geralmente em ter
+        um MVP pronto com o objetivo de lançá-lo
+        o mais rápido possível para saber o
+        feedback de seus clientes.
+          Se você tiver sorte o suficiente, seu
+        produto terá sucesso e você começará a
+        se preocupar com coisas como autenticação,
+        autorização, documentação, validação,
+        limitação de tráfego, geo-redundancy, e
+        deployment sem tempo offline.
+          Nesta apresentação eu irei mostrar
+        exemplos reais de nossa experiência
+        evoluindo nossas APIs na Auth0 e as
+        ferramentas utilizadas.
+      `
     }
   },
   {
@@ -172,7 +181,7 @@ export default [
       title: 'Produtividade ao infinito e além com We.js!',
       description: `Nessa palestra vou mostrar as idéias e conceitos
         implementados no We.js com o objetivo de criar sistemas acessíveis
-        completos e em pouco tempo comparando com a produtivídade de sistemas
+        completos e em pouco tempo comparando com a produtividade de sistemas
         muito usados como o Wordpress e Drupal.`
     }
   },
@@ -213,7 +222,7 @@ export default [
       Oi e BBC. Amo Javascript desde de o primeiro contato e acredita que
       precisamos de mais consciência no desenvolvimento.`,
     speak: {
-      title: 'Cuidado seu código não é seu',
+      title: 'Cuidado, seu código não é seu',
       description: `Todos os problemas e soluções feitas ao longo de 2 anos de
         desenvolvimento do site emprego.net. Da concepção e arquitetura, a toda a
         evolução tecnológica em dois anos de projeto, até testes de performance,
@@ -237,8 +246,7 @@ export default [
       title: 'Gerenciando o fluxo assíncrono de operações em NodeJS',
       description: `Ao construir aplicações Javascript, devemos nos preocupar
         com alguns fatores quando falamos do workflow da linguagem. Diferente das
-        linguagens sequenciais, os resultados tendem a ser inesperados (tempos de
-        execução diferentes) pelo fato de ser assincrono e dependerem de
+        linguagens sequenciais, resultados podem ser inesperados pelo fato da execução ser assíncrona e dependerem de
         callbacks, aprenderemos nesta palestra as boas práticas e soluções para
         criação de aplicações NodeJS.`
     }
@@ -255,7 +263,7 @@ export default [
     description: `Atualmente trabalhando como desenvolvedor na KingHost. Adoro
       estudar novas tecnologias e criar soluções inteligentes a partir delas.`,
     speak: {
-      title: 'Construindo aplicações escaláveis com Nodejs e Docker',
+      title: 'Construindo aplicações escaláveis com NodeJS e Docker',
       description: `Mostrar dificuldades que podem ocorrer ao tentar escalar
         aplicações nodejs. Apresentar a solução utilizando docker, mostrar
         vantagens, como por exemplo, a facilidade de desenvolver com ambientes
@@ -278,10 +286,10 @@ export default [
       Professor de NodeJS na WebSchool.i e apaixonado por OpenSource, código,
       algoritmos e competições de programação.`,
     speak: {
-      title: 'Javascript Multplataforma na Web, Desktop e Mobile',
+      title: 'Javascript Multiplataforma na Web, Desktop e Mobile',
       description: `Usando uma api rest, para servir mesma aplicação Angular, no
-        Desktop com Electron, Mobile Cordova e Web Express, com combertura de
-        testes autotomizados e cobertura.`
+        Desktop com Electron, Mobile Cordova e Web Express, com cobertura de
+        testes automatizados.`
     }
   },
   {

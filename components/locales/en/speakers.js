@@ -123,9 +123,22 @@ export default [
       twitter: 'https://twitter.com/dschenkelman'
     },
     description: `
-    Damian is an engineer in Auth0 working to make the core application scalable and performative.
-    He is lover about learning JavaScript, their specialty is in the area of perfomance and
-    contribution to open source software.`
+      Damian is an engineer in Auth0 working to make
+    the core application scalable and performative.
+      He loves to learn about JavaScript, and his
+    specialty is in the area of perfomance and
+    contribution to open source software.`,
+    speak: {
+      title: 'The dirty secrets of building large, highly available, scalable HTTP APIs',
+      description: `When you first start building an API for a new product you
+        mostly focus on getting an MVP ready, with the goal of shipping as soon
+        as possible so you can get feedback from customers. If you are lucky
+        enough, your product will be successful and you will have to start
+        worrying about things like authentication, authorization, documentation,
+        validation, rate limiting, geo-redundancy, and no downtime deployments.
+        In this talk I will go over some real life examples of our experience
+        evolving our APIs at Auth0 and some of the tools we use for that.`
+    }
   },
   {
     name: 'Emerson Macedo',
@@ -139,7 +152,11 @@ export default [
     description: `
     Emerson Macedo is a software developer from adolescence,
     working in the area since 1997. He has worked in insurance, banking, telecommunications and web portals.
-    He currently is technical leader in the Globo.com and operates projects in the area of videos for internet.`
+    He currently is a technical leader in Globo.com and operates projects in the area of videos for the internet.`,
+    speak: {
+      title: 'To be defined',
+      description: ''
+    }
   },
   {
     name: 'Alberto Souza',
@@ -152,7 +169,13 @@ export default [
     },
     description: `
     Hi I'm Javascript and PHP programmer, I have over 9 years of experience with development
-    I created and maintain the framework We.js and like to use my time to create things that help improve people's lives.`
+    I created and maintain the framework We.js and like to use my time to create things that help improve people's lives.`,
+    speak: {
+      title: 'Infinity and beyond productivity with We.js!',
+      description: `
+        In this talk, I'll show the concepts and ideas behind We.js with the objective of creating completely accessible systems in a short time in comparison to highly used systems, such as Wordpress and Drupal.
+      `
+    }
   },
   {
     name: 'Diego Martins',
@@ -167,8 +190,16 @@ export default [
     description: `Computer Science Bachelor by PUC-SP and Postgraduate in
       Technology Information Management by FIAP. I'm very interested not only
       for technology, but management process too. Work with web technologies
-      since 2013 and ever find time to keep learn and share knowledge. I
-      like very much write and an game developer enthusiast.`
+      since 2013 and always find time to keep learning and sharing knowledge. I
+      like to write and I'm a game developer enthusiast.`,
+    speak: {
+      title: 'MEAN Stack - Building a Chrome extension with MongoDB, Express.js, Angular and Node',
+      description: `
+        Hands-on talk, showing how Node.js allows
+        unifying all these technologies to build
+        something awesome, like a Chrome extension.
+      `
+    }
   },
   {
     name: 'Filipe M. Silva',
@@ -179,7 +210,18 @@ export default [
       github: 'https://github.com/flpms',
       twitter: 'https://twitter.com/flpms'
     },
-    description: 'Node.js developer already over 3 years and Frontend over 7 years, worked at Apontador, Itaú, Votorantim Bank, Oi and BBC. Love JS since the first contact and believe we need more awareness on development.'
+    description: 'Node.js developer already over 3 years and Frontend over 7 years, worked at Apontador, Itaú, Votorantim Bank, Oi and BBC. Love at first sight with JavaScript believes we need more development awareness.',
+    speak: {
+      title: 'Careful, your code is not yours!',
+      description: `
+          All issues and solutions faced in 2 years
+        of the development of emprego.net.
+          From conception, architecture and
+        technological evolution of the project
+        all the way to performance tests, security
+        and AWS deployment.
+      `
+    }
   },
   {
     name: 'Erick Wendel',
@@ -190,6 +232,21 @@ export default [
       twitter: 'https://twitter.com/erickwendeldev'
     },
     description: 'Microsoft Student Partner, MSDN Tech Advisor, Instructor, Speaker, VP of .NET Coders Group, Founder and Organizer of .NET Coders Ladies, degree in analysis and systems development. MCP and Web Development Specialist, now developing and adventuring in Node.js and TypScript.'
+    speak: {
+      title: 'Managing the flow of asynchronous operations in NodeJS',
+      description: `
+          When building JavaScript applications, we
+        need to be careful with the language
+        workflow.
+          As opposed to sequencial languages,
+        results can be unexpected because of
+        the nature of asynchronous execution and
+        use of callbacks.
+          In this talk, we will learn the solutions
+        and good practices of building NodeJS
+        applications.
+      `
+    }
   },
   {
     name: 'Bruno Fidelis',
@@ -200,7 +257,20 @@ export default [
       twitter: 'https://twitter.com/btfidelis004',
       github: 'https://github.com/btfidelis'
     },
-    description: 'Developer at KingHost, Love learn new technologies and build smart solutions with this technologies.'
+    description: 'Developer at KingHost, Loves to learn new technologies and build smart solutions with them.',
+    speak: {
+      title: 'Building scalable applications with NodeJS and Docker',
+      description: `
+          Walk through common difficulties when
+        scaling NodeJS applications. Show
+        the solution with Docker and its advantages,
+        like the ease of developing in replicable
+        environments.
+          Show how to configure such an environment,
+        explain the logic behind the structure, and
+        demonstrate a working example.
+      `
+    }
   },
   {
     name: 'Itacir Pompeu',
@@ -211,7 +281,16 @@ export default [
       twitter: 'https://twitter.com/Pompeulimp',
       github: 'https://github.com/Pompeu'
     },
-    description: 'Degree in Systems for Internet at IF in Goias, FullStack Developer in a solution for sharing data at MyInfoShare. Node.js teacher on WebSchool.io and lover of OpenSource, code, algoritms and hackathons.'
+    description: 'Degree in Systems for Internet at IF in Goias, FullStack Developer in a solution for sharing data at MyInfoShare. Node.js teacher on WebSchool.io and lover of OpenSource, code, algoritms and hackathons.',
+    speak: {
+      title: 'Multiplatform JavaScript on the Web, Desktop and Mobile',
+      description: `
+          Using a REST API to serve the same
+        Angular application on Desktop with Electron,
+        Mobile with Cordova and Web with Express,
+        with coverage of automated tests.
+      `
+    }
   },
   {
     name: 'Bruno Cartolari',
@@ -221,7 +300,16 @@ export default [
     social: {
       github: 'https://github.com/cartolari'
     },
-    description: 'Bruno Cartolari is a System Architect at Vizir over 2 years, develop software over 8 years, although only 20 years old. The sentence he speaks more in the company is: "Are you testing?", because he believe works with TDD is a key for develop a quality system.'
+    description: 'Bruno Cartolari is a System Architect at Vizir for over 2 years, develops software for over 8 years and has only 20 years old. The sentence he speaks in the company the most is: "WHERE ARE THE TESTS?", because he believes developing with TDD is a key factor for a high quality system.',
+    speak: {
+      title: 'Serverless Architecture with Node and AWS Lambda',
+      description: `
+          Learn how to build and deploy NodeJS
+        applications on AWS Lambda and never
+        worry with servers, instances and auto
+        scaling again.
+      `
+    }
   }
 
 ]
