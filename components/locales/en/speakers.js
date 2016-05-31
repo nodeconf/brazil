@@ -15,7 +15,7 @@ export default [
         Education and Advertising. Attends robotics competitions in Brazil and abroad, has experience
         in Hardware and Software.`,
     speak: {
-      title: `What's up, NodeJS?`,
+      title: 'What\'s up, NodeJS?',
       description: 'Test'
     }
   },
@@ -231,7 +231,7 @@ export default [
     social: {
       twitter: 'https://twitter.com/erickwendeldev'
     },
-    description: 'Microsoft Student Partner, MSDN Tech Advisor, Instructor, Speaker, VP of .NET Coders Group, Founder and Organizer of .NET Coders Ladies, degree in analysis and systems development. MCP and Web Development Specialist, now developing and adventuring in Node.js and TypScript.'
+    description: 'Microsoft Student Partner, MSDN Tech Advisor, Instructor, Speaker, VP of .NET Coders Group, Founder and Organizer of .NET Coders Ladies, degree in analysis and systems development. MCP and Web Development Specialist, now developing and adventuring in Node.js and TypScript.',
     speak: {
       title: 'Managing the flow of asynchronous operations in NodeJS',
       description: `
