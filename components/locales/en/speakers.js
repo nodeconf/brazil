@@ -53,7 +53,7 @@ export default [
       twitter: 'https://github.com/chrisenytc'
     },
     description: `
-        Technology lover since childhood and a perfectionist. Passionate about open- source community and
+        Technology lover since childhood and perfectionist. Passionate about open- source community and
         evangelist Node.js, Go, Elixir, Rust and MongoDB. It is currently Developer
         Evangelist in Pagar.me`,
     speak: {
