@@ -69,7 +69,7 @@ export default [
   {
     name: 'Nelson Frugeri',
     slug: 'nelson-frugeri',
-    job: 'DESENVOLVEDOR | CargoBR',
+    job: 'DEVELOPER | CargoBR',
     image: '/assets/img/nelson_frugeri.png',
     social: {
       linkedin: 'https://www.linkedin.com/in/nelson-f-jr-72297465',
