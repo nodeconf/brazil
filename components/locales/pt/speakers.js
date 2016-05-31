@@ -33,8 +33,19 @@ export default [
       principalmente em ferramentas do ecossistema Hapi. É co-autor de "Full
       Stack JS Development with MEAN". Fanático por Mega Man. JS também!`,
     speak: {
-      title: 'O Big Bang no universo hapi',
-      description: `Nesta apresentação, eu vou levá-lo em uma viagem pelo sempre em expansão universo hapi. Começaremos pelo "evento big bang" - falando o quê, como e por que isso aconteceu. Em seguida faremos um rápida passeio pelos módulos de ordem superior do universo hapi. Ao final, você terá um melhor entendimento do que o universo hapi têm para oferecer e o que você pode usar para rapidamente começar seu próximo projeto.`
+      title: 'O Big Bang no universo Hapi',
+      description: `Nesta apresentação, eu vou levá-lo em uma viagem pelo sempre em expansão universo hapi.
+          Começaremos pelo "evento big bang" -
+        falando o quê, como e por que isso
+        aconteceu.
+          Em seguida faremos um rápida passeio
+        pelos módulos de ordem superior do
+        universo hapi.
+          Ao final, você terá um melhor
+        entendimento do que o universo hapi têm
+        para oferecer e o que você pode usar
+        para rapidamente começar seu próximo
+        projeto.`
     }
   },
   {
@@ -58,7 +69,7 @@ export default [
   {
     name: 'Nelson Frugeri',
     slug: 'nelson-frugeri',
-    job: 'DEVELOPER | CargoBR',
+    job: 'DESENVOLVEDOR | CargoBR',
     image: '/assets/img/nelson_frugeri.png',
     social: {
       linkedin: 'https://www.linkedin.com/in/nelson-f-jr-72297465',
@@ -93,12 +104,12 @@ export default [
     },
     description: `Kat Marchán é uma programadora na equipe de CLI do npm. Ela
       gosta de linguagens de programacão, linguagens de pessoas,
-      linguage inclusivo, e pão de queijo. Ela é porto-riquenha e não fala
+      linguagem inclusiva, e pão de queijo. Ela é porto-riquenha e não fala
       português muito bem, mas tenta ;)`,
     speak: {
       title: 'npm: além da noções básicas',
-      description: `O uso intermedio e avançado de npm: \`npm scripts\`,
-        shrinkwrap, outros registros, uso empresarial`
+      description: `Uso intermediário e avançado de npm: \`npm scripts\`,
+        shrinkwrap, outros registros e uso empresarial.`
     }
   },
   {

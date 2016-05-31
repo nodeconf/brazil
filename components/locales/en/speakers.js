@@ -53,9 +53,13 @@ export default [
       twitter: 'https://github.com/chrisenytc'
     },
     description: `
-        Technology lover since childhood and perfectionist. Passionate about open- source community and
+        Technology lover since childhood and a perfectionist. Passionate about open- source community and
         evangelist Node.js, Go, Elixir, Rust and MongoDB. It is currently Developer
-        Evangelist in Pagar.me`
+        Evangelist in Pagar.me`,
+    speak: {
+      title: 'API Architecture for complex Node.js applications',
+      description: ''
+    }
   },
   {
     name: 'Nelson Frugeri',
@@ -67,10 +71,26 @@ export default [
       twitter: 'https://twitter.com/neldevfull'
     },
     description: `
-     Nelson is student of Information Systems in the UNIFACEF in Franca and
-     work remote your city São Joaquim da Barra to company CargoBR in São Paulo
-     Technology lover, entrepreneurship and exponential technologies,
-     believe in bright future in which men and machines lived in a singular universe.`
+     Nelson is a student of Information Systems in the UNIFACEF in Franca and
+     works remotely from your city, São Joaquim da Barra, to CargoBR company in São Paulo.
+     In love with software development, entrepreneurship and exponential technologies,
+     believes in a bright future in which men and machines will live in a singular universe.`,
+    speak: {
+      title: 'Node in Things!',
+      description: `This talk will present how
+        to use Node.js in Arduino programming with
+        the Johnny-Five framework.
+          A real life project, the game Genius, will
+        be used as example, in which the speaker
+        will show each step of the project assembly
+        with images of the hardware components,
+        and the source code.
+          This talk highlights the technical and
+        the motivational parts, in which the
+        speaker encourages the use of the
+        JavaScript language for the revolution
+        known as the Internet of Things.`
+    }
   },
   {
     name: 'Kat Marchán',
@@ -82,10 +102,16 @@ export default [
       twitter: 'https://twitter.com/maybekatz'
     },
     description: `
-    Kat Marchán ia a programmer in the team CLI of npm
+    Kat Marchán is a programmer in the CLI team in npm.
     She enjoys programming languages, languages of people,
-    linguage inclusive, and cheese bread. It is Puerto Rican and
-    doesn't speak Portuguese very well, but try  ;)`
+    inclusive language, and cheese bread. She is Puerto Rican and doesn't speak Portuguese
+    very well, but she tries ;)`,
+    speak: {
+      title: 'npm: beyond basic notions',
+      description: `Intermediate and advanced usage
+        of npm: \`npm scripts\`, shrinkwrap,
+        multiple registers and comporate use.`
+    }
   },
   {
     name: 'Damian Schenkelman',
