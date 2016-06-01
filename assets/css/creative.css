@@ -1216,26 +1216,17 @@ footer {
   background-color: #72bd53;
   color: rgb(246,246,245);
 }
-img.img-responsive[alt="Uol Host"] {
-    height: 116px;
-}
-img.img-responsive[alt="Vizir"] {
-    height: 80px;
-    margin-top: 21px;
-}
-img.img-responsive[alt="Wisepix"] {
-    height: 75px;
-    margin-top: 20px;
-}
-img.img-responsive[alt="Auth0"] {
-    height: 65px;
-}
-img.img-responsive[alt="Net Coders"] {
-    height: 65px;
-}
-img.img-responsive[alt="Brazil JS"] {
-    height: 70px;
-}
+
 #schedule {
     background-color: #f6f6f5;
+}
+
+.sponsorships-line > div {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.sponsorships-apoiadores img {
+    width: 70%;
 }
