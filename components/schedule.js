@@ -64,12 +64,18 @@ export default [
   {
     day: 1,
     time: '17:00',
-    speaker_slug: 'adam-bretz',
+    speaker_slug: 'guilherme-souza',
     type: 'big_talk'
   },
   {
     day: 1,
     time: '17:50',
+    speaker_slug: 'adam-bretz',
+    type: 'big_talk'
+  },
+  {
+    day: 1,
+    time: '18:50',
     title: 'Encerramento',
     type: 'talk_break'
   },

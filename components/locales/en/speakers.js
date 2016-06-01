@@ -153,10 +153,7 @@ export default [
     Emerson Macedo is a software developer from adolescence,
     working in the area since 1997. He has worked in insurance, banking, telecommunications and web portals.
     He currently is a technical leader in Globo.com and operates projects in the area of videos for the internet.`,
-    speak: {
-      title: 'To be defined',
-      description: ''
-    }
+    speak: {}
   },
   {
     name: 'Alberto Souza',

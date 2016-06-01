@@ -160,8 +160,11 @@ export default [
       bancos, telecomunicações e portais web. Atualmente é líder técnico na
       Globo.com e atua em projetos na área de vídeos para internet.`,
     speak: {
-      title: 'A definir',
-      description: ''
+      title: 'Node.js in 2016 - How, Why and for What',
+      description: `On this talk, We'll see how Node.js started, the ecosystem,
+        tools, communities (including ours) and so on. It's a good point of
+        view to understand motivation, trade-off and drawbacks, and also to
+        realize how strong Node.js is in 2016, during the last 7 years.`
     }
   },
   {
@@ -309,6 +312,24 @@ export default [
       description: `Aprenda como desenvolver e fazer Deploy de aplicações NodeJS
       direto no AWS Lambda e não se preocupe nunca mais com servidores,
       instâncias, auto scaling, etc`
+    }
+  },
+  {
+    name: 'Guilherme de Souza',
+    slug: 'guilherme-souza',
+    job: 'PRODUCT ENGINEER | Sprinklr',
+    image: '/assets/img/guilherme-souza.png',
+    social: {
+      github: 'https://github.com/guisouza',
+      twitter: 'https://twitter.com/_gui_souza'
+    },
+    description: `Guilherme Souza, é Product Engineer no Sprinklr e CTO na
+      LearningHub,  desenvolve para web há 9 anos e é apaixonado por javascript
+      e por projetos Open-Source.`,
+    speak: {
+      title: 'Serious NodeJS Applications',
+      description: `Como desenhamos aplicações que lidam com mais de 2 milhões
+        de usuários toda semana?`
     }
   }
 ]

@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = {
-  entry: './components/app.js',
+  entry: ['babel-polyfill', './components/app.js'],
   output: {
     path: `${__dirname}/public/assets/js`,
     filename: 'app.js',
