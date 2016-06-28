@@ -70,7 +70,7 @@ export default [
   {
     day: 1,
     time: '17:50',
-    speaker_slug: 'adam-bretz',
+    speaker_slug: 'kat-marchan',
     type: 'big_talk'
   },
   {
@@ -112,7 +112,7 @@ export default [
   {
     day: 2,
     time: '13:40',
-    speaker_slug: 'kat-marchan',
+    speaker_slug: 'adam-bretz',
     type: 'big_talk'
   },
   {
